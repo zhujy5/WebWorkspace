@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.1.xsd
+    http://www.springframework.org/schema/util 
+	http://www.springframework.org/schema/util/spring-util-4.1.xsd">
+
+	<bean id="buketName" class="java.lang.String">
+		<constructor-arg value="${OSS_Bucket_Name}" />
+	</bean>
+
+	<bean id="ossUrlPrefix" class="java.lang.String">
+		<constructor-arg value="${OSS_URL_Prefix}" />
+	</bean>
+	
+	<bean id="ossLargeSmallUrl" class="java.lang.String">
+		<constructor-arg value="${OSS_LARGE_SMALL_URL}" />
+	</bean>
+	
+	<util:map id="ossSubPathMap" map-class="java.util.TreeMap">
+		<entry key="memberPicture" value="image/member" />
+		<entry key="productPicture" value="image/product" />
+		<entry key="storePicture" value="image/store" />
+		<entry key="couponPicture" value="image/coupon" />
+		<entry key="stationPicture" value="image/station" />
+		<entry key="serviceItemPicture" value="image/serviceitem" />
+		<entry key="newsPicture" value="image/news" />
+		<entry key="serviceItemPicture" value="image/serviceitem" />
+		<entry key="advertisePicture" value="image/advertise" />
+		<entry key="carouselPicture" value="image/company/carousel" />
+		<entry key="qrcodePicture" value="image/company/qrcode" />
+		<entry key="packagePicture" value="image/package" />
+		<entry key="photoWallPicture" value="image/company/photowall" />
+		<entry key="outputDownload" value="output_download" />
+		<entry key="companyRegister" value="image/register" />
+		<entry key="unionPicture" value="image/union" />
+	</util:map>
+
+	<bean id="ossHelper" class="com.fcyun.common.aliyun.OssHelper">
+		<property name="endPoint" value="${OSS_EndPoint}" />
+		<property name="accessKeyId" value="${OSS_AccessKeyID}" />
+		<property name="accessKeySecret" value="${OSS_AccessKeySecret}" />
+	</bean>
+
+</beans>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MCOperation:war">
+    <output-path>$PROJECT_DIR$/MCOperation/target</output-path>
+    <root id="archive" name="MCOperation.war">
+      <element id="artifact" artifact-name="MCOperation:war exploded" />
+    </root>
+  </artifact>
+</component>

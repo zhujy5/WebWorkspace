@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MCBatch:war">
+    <output-path>$PROJECT_DIR$/MCBatch/target</output-path>
+    <root id="archive" name="MCBatch.war">
+      <element id="artifact" artifact-name="MCBatch:war exploded" />
+    </root>
+  </artifact>
+</component>

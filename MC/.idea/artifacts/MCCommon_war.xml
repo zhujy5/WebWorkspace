@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MCCommon:war">
+    <output-path>$PROJECT_DIR$/MCCommon/target</output-path>
+    <root id="archive" name="MCCommon.war">
+      <element id="artifact" artifact-name="MCCommon:war exploded" />
+    </root>
+  </artifact>
+</component>

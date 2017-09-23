@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-4.1.xsd
+                        http://www.springframework.org/schema/mvc
+                        http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+                        http://www.springframework.org/schema/aop
+                        http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+                        ">
+    <!-- 组件自动扫描（spring容器管理的组件） -->
+    <context:component-scan base-package="com.michong"></context:component-scan>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/views/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+    <!-- 对静态资源文件的访问 -->
+    <mvc:resources location="/bootstrap-table/" mapping="/bootstrap-table/**" />
+    <mvc:resources location="/css/" mapping="/css/**" />
+    <mvc:resources location="/fonts/" mapping="/fonts/**" />
+    <mvc:resources location="/images/" mapping="/images/**" />
+    <mvc:resources location="/js/" mapping="/js/**" />
+    <mvc:resources location="/assets/" mapping="/assets/**" />
+    <mvc:resources location="/tempdata/" mapping="/tempdata/**" />
+    <mvc:resources location="/template/" mapping="/template/**" />
+    <mvc:resources location="/views/" mapping="/views/**/*.*" />
+    <mvc:resources location="/login/" mapping="/login/**" />
+    <mvc:resources location="/logoff/" mapping="/logoff/**" />
+
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+        <property name="webBindingInitializer" ref="webBindingInitializer" />
+        <property name="messageConverters">
+            <list>
+                <bean id="jsonHttpMessageConverter"
+                      class="com.fcyun.common.util.json.JsonConverter">
+                    <property name="supportedMediaTypes">
+                        <list>
+                            <value>application/json;charset=UTF-8</value>
+                        </list>
+                    </property>
+                </bean>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 3.1 之后代替 AnnotationMethodHandlerAdapter -->
+    <bean id="webBindingInitializer" class="org.springframework.web.bind.support.ConfigurableWebBindingInitializer">
+        <property name="validator" ref="validator"/>
+    </bean>
+
+    <!-- 以下 validator ConversionService 在使用 mvc:annotation-driven 会 自动注册 -->
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" >
+        <property name="providerClass" value="org.hibernate.validator.HibernateValidator" />
+        <!-- 如果不加默认到 使用classpath下的 ValidationMessages.properties -->
+        <property name="validationMessageSource" ref="messageSource" />
+    </bean>
+
+    <!-- 国际化的消息资源文件（本系统中主要用于显示/错误消息定制） -->
+    <bean id="messageSource"
+          class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <!-- 在web环境中一定要定位到classpath 否则默认到当前web应用下找 -->
+                <value>classpath:messages/bill</value>
+                <value>classpath:messages/bank</value>
+                <value>classpath:messages/common</value>
+                <value>classpath:messages/company</value>
+                <value>classpath:messages/coupon</value>
+                <value>classpath:messages/dealhistory</value>
+                <value>classpath:messages/login</value>
+                <value>classpath:messages/member</value>
+                <value>classpath:messages/order</value>
+                <value>classpath:messages/payment</value>
+                <value>classpath:messages/commissionsconfig</value>
+                <value>classpath:messages/memberLevel</value>
+                <value>classpath:messages/memberUpgradeRule</value>
+                <value>classpath:messages/recharge</value>
+                <value>classpath:messages/register</value>
+                <value>classpath:messages/staff</value>
+                <value>classpath:messages/product</value>
+                <value>classpath:messages/store</value>
+                <value>classpath:messages/sms</value>
+                <value>classpath:messages/smsTemplate</value>
+                <value>classpath:messages/packageInfo</value>
+                <value>classpath:messages/systemcode</value>
+                <value>classpath:messages/shake</value>
+                <value>classpath:messages/operator</value>
+                <value>classpath:messages/staffPosition</value>
+                <value>classpath:messages/table</value>
+                <value>classpath:ValidationMessages</value>
+                <value>classpath:messages/businesslog</value>
+                <value>classpath:org/hibernate/validator/ValidationMessages</value>
+                <value>classpath:messages/bonus</value>
+                <value>classpath:messages/wechat</value>
+                <value>classpath:messages/serviceRecord</value>
+                <value>classpath:messages/memberFilter</value>
+                <value>classpath:messages/memberTag</value>
+                <value>classpath:messages/seller</value>
+                <value>classpath:messages/merchantunion</value>
+                <value>classpath:messages/authorizationversion</value>
+                <value>classpath:messages/checkoutperiod</value>
+                <value>classpath:messages/platformpaychannel</value>
+                <value>classpath:messages/njcmbcapplication</value>
+                <value>classpath:messages/tjcmbcapplication</value>
+            </list>
+        </property>
+        <property name="useCodeAsDefaultMessage" value="false" />
+        <property name="defaultEncoding" value="UTF-8" />
+        <property name="cacheSeconds" value="60" />
+    </bean>
+
+    <!-- 动态代理 -->
+    <aop:aspectj-autoproxy proxy-target-class="true" />
+
+
+
+</beans>
