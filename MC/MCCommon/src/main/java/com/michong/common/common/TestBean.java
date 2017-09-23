@@ -1,4 +1,4 @@
-package com.michong.common.batch.common;
+package com.michong.common.common;
 
 /**
  * Created by liuxin_PC on 2017/9/23.
