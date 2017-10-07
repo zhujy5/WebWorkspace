@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MCMiniProgram:war">
+    <output-path>$PROJECT_DIR$/MCMiniProgram/target</output-path>
+    <root id="archive" name="MCMiniProgram.war">
+      <element id="artifact" artifact-name="MCMiniProgram:war exploded" />
+    </root>
+  </artifact>
+</component>
