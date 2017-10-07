@@ -41,6 +41,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/MCBatch" />
     <file type="web" url="file://$PROJECT_DIR$/MCCommon" />
+    <file type="web" url="file://$PROJECT_DIR$/MCMiniProgram" />
     <file type="web" url="file://$PROJECT_DIR$/MCOperation" />
   </component>
   <component name="MavenProjectsManager">

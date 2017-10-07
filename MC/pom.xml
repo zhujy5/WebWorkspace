@@ -21,6 +21,7 @@
         <module>MCCommon</module>
         <module>MCOperation</module>
         <module>MCBatch</module>
+        <module>MCMiniProgram</module>
     </modules>
 
     <dependencyManagement>

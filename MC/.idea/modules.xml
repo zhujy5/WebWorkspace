@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/MC.iml" filepath="$PROJECT_DIR$/MC.iml" />
       <module fileurl="file://$PROJECT_DIR$/MCBatch/MCBatch.iml" filepath="$PROJECT_DIR$/MCBatch/MCBatch.iml" />
       <module fileurl="file://$PROJECT_DIR$/MCCommon/MCCommon.iml" filepath="$PROJECT_DIR$/MCCommon/MCCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MCMiniProgram/MCMiniProgram.iml" filepath="$PROJECT_DIR$/MCMiniProgram/MCMiniProgram.iml" />
       <module fileurl="file://$PROJECT_DIR$/MCOperation/MCOperation.iml" filepath="$PROJECT_DIR$/MCOperation/MCOperation.iml" />
     </modules>
   </component>
