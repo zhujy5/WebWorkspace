@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9377d35a-031e-46b7-baa6-220a4bf103ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCCommon/src/main/java/com/michong/common/common/filter/AbstractControlFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCOperation/src/main/webapp/views/error/controller.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCOperation/src/main/webapp/views/error/dao.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCOperation/src/main/webapp/views/error/error.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCOperation/src/main/webapp/views/error/multilogin.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCOperation/src/main/webapp/views/error/service.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCOperation/src/main/webapp/views/error/submittoken.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCOperation/src/main/webapp/views/error/unauthentication.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCOperation/src/main/webapp/views/error/unauthorization.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCMiniProgram/MCMiniProgram.iml" afterPath="$PROJECT_DIR$/MCMiniProgram/MCMiniProgram.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCMiniProgram/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/MCMiniProgram/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCOperation/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/MCOperation/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MCSpringBoot/src/main/resources/templates.error/error.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MCSpringBoot/src/main/java/com/michong/repositoty/UserInfoRepositoty.java" afterPath="$PROJECT_DIR$/../MCSpringBoot/src/main/java/com/michong/repositoty/UserInfoRepositoty.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MCSpringBoot/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/../MCSpringBoot/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,7 +32,18 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -143,7 +145,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,12 +160,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.23474178" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -171,7 +173,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="D:/BaiduYunDownload/fcyun/FC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -954,6 +956,7 @@
       <workItem from="1507359861627" duration="9772000" />
       <workItem from="1508423025001" duration="624000" />
       <workItem from="1508575200455" duration="101000" />
+      <workItem from="1510487263278" duration="2480000" />
     </task>
     <task id="LOCAL-00001" summary="git仓库首次push">
       <created>1506170113564</created>
@@ -994,11 +997,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18346000" />
+    <option name="totallyTimeSpent" value="20826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1022,7 +1025,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25348338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25669882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1197,14 +1200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="370" column="21" lean-forward="false" selection-start-line="365" selection-start-column="8" selection-end-line="370" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MCMiniProgram/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1279,6 +1274,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding />
         </state>
       </provider>
